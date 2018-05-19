@@ -1,0 +1,13 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+roblox.com	TRUE	/	FALSE	1999999999	RBXSource	rbx_acquisition_time=5/18/2018 5:00:57 PM&rbx_acquisition_referrer=&rbx_medium=Direct&rbx_source=&rbx_campaign=&rbx_adgroup=&rbx_keyword=&rbx_matchtype=&rbx_send_info=1
+.roblox.com	TRUE	/	FALSE	1999999999	RBXViralAcquisition	time=5/18/2018 5:00:57 PM&referrer=&originatingsite=
+roblox.com	TRUE	/	FALSE	1999999999	RBXEventTrackerV2	CreateDate=5/18/2018 5:00:57 PM&rbxid=&browserid=18311758378
+.roblox.com	TRUE	/	FALSE	1999999999	GuestData	UserID=-1173038354
+corp.roblox.com	TRUE	/	FALSE	1999999999	PHPSESSID	8b8153vq5tmrs5sti9nd81aj92
+.scorecardresearch.com	TRUE	/	FALSE	1999999999	UID	14865a20258a60a289b1b1g1526680891
+.scorecardresearch.com	TRUE	/	FALSE	1999999999	UIDR	1526680891
+.youtube.com	TRUE	/	FALSE	1999999999	YSC	2xOyd0LJWSo
+.youtube.com	TRUE	/	FALSE	1999999999	GPS	1
+.youtube.com	TRUE	/	FALSE	1999999999	VISITOR_INFO1_LIVE	YemlcZM2F8g
+
